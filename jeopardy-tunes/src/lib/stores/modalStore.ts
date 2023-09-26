@@ -2,15 +2,15 @@ import { writable } from 'svelte/store';
 
 interface ModalStore {
   isOpen: boolean;
-  question: string;
-  answer: string;
+  question: string | null;
+  answer: string | null;
   points: number;
 }
 
 const initialState: ModalStore = {
   isOpen: false,
-  question: "",
-  answer: "",
+  question: null,
+  answer: null,
   points: 0
 };
 

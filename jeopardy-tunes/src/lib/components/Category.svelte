@@ -1,14 +1,14 @@
 <script lang="ts">
 	import QuestionTile from './QuestionTile.svelte';
 	export let title: string;
-	export let questions: { question: string; answer: string; points: number }[];
+	export let questions: { question: string; answer: string; points: number; revealed: boolean }[];
 </script>
 
 <div class="category">
 	<h2>{title}</h2>
 	<div class="questions">
-		{#each questions as { question, answer, points }, index (index)}
-			<QuestionTile {question} {answer} {points} />
+		{#each questions as { question, answer, points, revealed }, index (index)}
+			<QuestionTile {question} {answer} {points} {revealed} />
 		{/each}
 	</div>
 </div>

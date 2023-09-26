@@ -12,27 +12,32 @@
 				{
 					points: 100,
 					question: 'Who wrote the song "Lose Yourself"',
-					answer: 'Eminem'
+					answer: 'Eminem',
+					revealed: false
 				},
 				{
 					points: 200,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 300,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				}
 			]
 		},
@@ -42,27 +47,32 @@
 				{
 					points: 100,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 200,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 300,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				}
 			]
 		},
@@ -72,27 +82,32 @@
 				{
 					points: 100,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 200,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 300,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				}
 			]
 		},
@@ -102,27 +117,32 @@
 				{
 					points: 100,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 200,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 300,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				}
 			]
 		},
@@ -132,27 +152,32 @@
 				{
 					points: 100,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 200,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 300,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Q',
-					answer: 'Bach'
+					answer: 'Bach',
+					revealed: false
 				}
 			]
 		}
@@ -167,8 +192,8 @@
 
 <div class="players-container">
 	{#each $playerStore as { id, name, score }}
-		<Player {name} {score} onScoreChange={(change) => adjustPlayerScore(id, change)} />
-	{/each}
+        <Player {name} {score} onScoreChange={(change) => adjustPlayerScore(id, change)} />
+    {/each}
 </div>
 
 <Modal />

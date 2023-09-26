@@ -3,8 +3,8 @@
 	import modalStore from '$lib/stores/modalStore';
 
 	let isOpen: boolean;
-	let question: string;
-	let answer: string;
+	let question: string | null;
+	let answer: string | null;
 	let points: number;
 	let showAnswer = false;
 	let modalContent: HTMLElement;
@@ -23,7 +23,9 @@
 
 	function closeModal(event: MouseEvent) {
 		if (event.target !== modalContent) {
-			modalStore.set({ isOpen: false, question: '', answer: '', points: 0 });
+			modalStore.update(store => {
+				return { ...store, isOpen: false };
+			});
 		}
 	}
 
