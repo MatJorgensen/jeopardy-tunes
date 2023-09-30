@@ -7,112 +7,78 @@
 	// For simplicity, let's hardcode some questions. In a real app, you might fetch these from an API.
 	const categories = [
 		{
-			title: 'Classical',
+			title: 'Artist, titel og album',
 			questions: [
 				{
 					points: 100,
-					question: 'Who wrote the song "Lose Yourself"',
-					answer: 'Eminem',
+					question: 'Q',
+					answer: 'A$AP Ferg - Floor Seats - Floor Seats',
 					revealed: false
 				},
 				{
 					points: 200,
 					question: 'Q',
-					answer: 'Bach',
+					answer: 'The Game, 50 Cent - Hate it or Love it - The Documentary',
 					revealed: false
 				},
 				{
 					points: 300,
 					question: 'Q',
-					answer: 'Bach',
+					answer: "KAYTRANADA - YOU'RE THE ONE - 99.9%",
 					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Q',
-					answer: 'Bach',
+					answer: 'Tame Impala - The Less I Know The Better - Currents',
 					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Q',
-					answer: 'Bach',
+					answer: "Scatman John - Scatman (ski-ba-bop-ba-dop-bop) - Scatman's World",
 					revealed: false
 				}
 			]
 		},
 		{
-			title: 'Hip-hop',
+			title: 'Trivia',
 			questions: [
 				{
 					points: 100,
-					question: 'Q',
-					answer: 'Bach',
+					question:
+						'Denne rapper producerede en stor del af numrene på Jay-Z\'s album "The Blueprint"',
+					answer: 'Hvem er Kanye West?',
 					revealed: false
 				},
 				{
 					points: 200,
-					question: 'Q',
-					answer: 'Bach',
+					question: 'Denne musikvideo var den første til at få en milliard visninger på YouTube',
+					answer: 'Hvad er "Gangnam Style"?',
 					revealed: false
 				},
 				{
 					points: 300,
-					question: 'Q',
-					answer: 'Bach',
+					question: 'Denne artist har vundet flest Grammy-statuetter',
+					answer: 'Hvem er Beyoncé?',
 					revealed: false
 				},
 				{
 					points: 400,
-					question: 'Q',
-					answer: 'Bach',
+					question: 'Dette nabolag er hvor 2Pac blev født',
+					answer: 'Hvad er Harlem, New York?',
 					revealed: false
 				},
 				{
 					points: 500,
-					question: 'Q',
-					answer: 'Bach',
+					question: 'Dette album, udgivet i 1977, indeholder tracks som "Go Your Own Way" og "Dreams", og er et af de bedst sælgende albums nogensinde.',
+					answer: 'Hvad er "Rumours" af Fleetwood Mac?',
 					revealed: false
 				}
 			]
 		},
 		{
-			title: 'Jazz',
-			questions: [
-				{
-					points: 100,
-					question: 'Q',
-					answer: 'Bach',
-					revealed: false
-				},
-				{
-					points: 200,
-					question: 'Q',
-					answer: 'Bach',
-					revealed: false
-				},
-				{
-					points: 300,
-					question: 'Q',
-					answer: 'Bach',
-					revealed: false
-				},
-				{
-					points: 400,
-					question: 'Q',
-					answer: 'Bach',
-					revealed: false
-				},
-				{
-					points: 500,
-					question: 'Q',
-					answer: 'Bach',
-					revealed: false
-				}
-			]
-		},
-		{
-			title: 'Techno',
+			title: 'Hvem samplede?',
 			questions: [
 				{
 					points: 100,
@@ -147,7 +113,7 @@
 			]
 		},
 		{
-			title: 'R&B',
+			title: 'Film eller spil bag',
 			questions: [
 				{
 					points: 100,
@@ -177,6 +143,41 @@
 					points: 500,
 					question: 'Q',
 					answer: 'Bach',
+					revealed: false
+				}
+			]
+		},
+		{
+			title: 'Hvem er featuring?',
+			questions: [
+				{
+					points: 100,
+					question: 'Nelly Furtado - Promiscuous ft. ________',
+					answer: 'Timbaland',
+					revealed: false
+				},
+				{
+					points: 200,
+					question: 'Beyoncé - Crazy in Love ft. ________',
+					answer: 'Jay-Z',
+					revealed: false
+				},
+				{
+					points: 300,
+					question: 'Post Malone - Sunflower ft. ________',
+					answer: 'Swae Lee',
+					revealed: false
+				},
+				{
+					points: 400,
+					question: 'Kato - Hey Shorty (Yeah Yeah Part II) ft. ________',
+					answer: 'U$O & Johnson',
+					revealed: false
+				},
+				{
+					points: 500,
+					question: 'Kanye West - Mercy ft. ________',
+					answer: 'Big Sean, Pusha T & 2 Chainz',
 					revealed: false
 				}
 			]
@@ -184,28 +185,45 @@
 	];
 </script>
 
-<div class="game-board">
-	{#each categories as { title, questions }, index (index)}
-		<Category {title} {questions} />
-	{/each}
-</div>
+<div class="container">
+	<!-- Game Board -->
+	<div class="game-board">
+		{#each categories as { title, questions }, index (index)}
+			<Category {title} {questions} />
+		{/each}
+	</div>
 
-<div class="players-container">
-	{#each $playerStore as { id, name, score }}
-        <Player {name} {score} onScoreChange={(change) => adjustPlayerScore(id, change)} />
-    {/each}
-</div>
+	<!-- Players Container -->
+	<div class="players-container">
+		{#each $playerStore as { id, name, score }}
+			<Player {name} {score} onScoreChange={(change) => adjustPlayerScore(id, change)} />
+		{/each}
+	</div>
 
-<Modal />
+	<!-- Modal -->
+	<Modal />
+</div>
 
 <style>
-	.game-board {
-		/* Add styling for the game board */
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		gap: 1rem;
+	/* Container Styling */
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto; /* Center container horizontally */
 	}
 
+	/* Game Board Styling */
+	.game-board {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		background-color: #000;
+		width: 1400px;
+		padding: 5px;
+	}
+
+	/* Players Container Styling */
 	.players-container {
 		display: flex;
 		justify-content: center;

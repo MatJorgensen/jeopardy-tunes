@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'geoparodyheavy';
+    src: local('GeoparodyHv-Regular'),
+    url('http://localhost:5173/static/fonts/geoparody-heavy-webfont.woff2') format('woff2'),
+        url('http://localhost:5173/static/fonts/geoparody-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
