@@ -57,7 +57,7 @@
 	// audio
 	function playPauseAudio() {
 		if (!audioPath || audioPath === '') return;
-		
+
 		if (playing) {
 			audio?.pause();
 		} else {
@@ -103,26 +103,43 @@
 			on:click={(e) => e.stopPropagation()}
 			tabindex={0}
 		>
-			<h2>{question}</h2>
+			<p>{question}</p>
 			{#if showAnswer}
 				<p>{answer}</p>
 			{/if}
-			<p>Points: {points}</p>
 			<button on:click={playPauseAudio}>{playing ? 'Pause' : 'Play'}</button>
-			<div class="progress-bar">
-				<div class="progress" style="width: {progress}%" />
-			</div>
 			<button
 				on:click={(e) => {
 					e.stopPropagation();
 					closeModal(e);
 				}}>Close</button
 			>
+			<div class="progress-bar">
+				<div class="progress" style="width: {progress}%" />
+			</div>
+			
 		</div>
 	</div>
 {/if}
 
 <style>
+	@font-face {
+		font-family: 'Swiss 911 Ultra Compressed BT';
+		src: url('./fonts/swiss-911-ultra-compressed-bt.woff2') format('woff2'),
+			url('./fonts/swiss-911-ultra-compressed-bt.woff') format('woff');
+		font-style: normal;
+	}
+	p {
+		font-family: 'Swiss 911 Ultra Compressed BT', 'Helvetica', 'Arial', sans-serif;
+		font-size: 32px; /* adjust as needed */
+		color: #fff;
+		text-shadow: 4px 4px 2px #000;
+		margin: 10px 10px 10px 0;
+	}
+	button {
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
 	.modal-overlay {
 		position: fixed;
 		top: 0;
@@ -136,7 +153,12 @@
 	}
 
 	.modal-content {
-		background: white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -95%);
+		width: 800px;
+		background: #0219a3;
 		padding: 20px;
 		border-radius: 8px;
 		outline: none;

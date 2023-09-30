@@ -11,36 +11,36 @@
 			questions: [
 				{
 					points: 100,
-					question: 'Q',
-					answer: 'A$AP Ferg - Floor Seats - Floor Seats',
+					question: '',
+					answer: 'Hvad er A$AP Ferg med "Floor Seats" på "Floor Seats"',
 					audioPath: './audio/A$AP Ferg - Floor Seats.mp3',
 					revealed: false
 				},
 				{
 					points: 200,
-					question: 'Q',
-					answer: 'The Game, 50 Cent - Hate it or Love it - The Documentary',
+					question: '',
+					answer: 'Hvad er The Game og 50 Cent med "Hate it or Love it" på "The Documentary"',
 					audioPath: './audio/The Game, 50 Cent - Hate It Or Love It.mp3',
 					revealed: false
 				},
 				{
 					points: 300,
-					question: 'Q',
-					answer: "KAYTRANADA - YOU'RE THE ONE - 99.9%",
+					question: '',
+					answer: 'Hvad er KAYTRANADA med "YOU\'RE THE ONE" på "99.9%"',
 					audioPath: './audio/KAYTRANADA - YOURE THE ONE.mp3',
 					revealed: false
 				},
 				{
 					points: 400,
-					question: 'Q',
-					answer: 'Tame Impala - The Less I Know The Better - Currents',
+					question: '',
+					answer: 'Hvad er Tame Impala med "The Less I Know The Better" på "Currents"',
 					audioPath: './audio/Tame Impala - The Less I Know The Better.mp3',
 					revealed: false
 				},
 				{
 					points: 500,
-					question: 'Q',
-					answer: "Scatman John - Scatman (ski-ba-bop-ba-dop-bop) - Scatman's World",
+					question: '',
+					answer: 'Hvad er Scatman John med "Scatman (ski-ba-bop-ba-dop-bop)" på "Scatman\'s World"',
 					audioPath: './audio/Scatman John - Scatman (ski-ba-bop-ba-dop-bop).mp3',
 					revealed: false
 				}
@@ -51,8 +51,7 @@
 			questions: [
 				{
 					points: 100,
-					question:
-						'Denne rapper producerede en stor del af numrene på Jay-Z\'s album "The Blueprint"',
+					question: 'Denne rapper producerede en stor del af numrene på Jay-Z\'s album "The Blueprint"',
 					answer: 'Hvem er Kanye West?',
 					audioPath: '',
 					revealed: false
@@ -92,35 +91,35 @@
 			questions: [
 				{
 					points: 100,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er Kanye West med "Touch The Sky"?',
 					audioPath: './audio/Curtis Mayfield - Move on Up.mp3',
 					revealed: false
 				},
 				{
 					points: 200,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er MC Hammer med "U Can\'t Touch This"?',
 					audioPath: './audio/Rick James - Super Freak.mp3',
 					revealed: false
 				},
 				{
 					points: 300,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er Fugees med "Ready or Not"?',
 					audioPath: './audio/Enya - Boadicea.mp3',
 					revealed: false
 				},
 				{
 					points: 400,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er Mos Def med "Ms. Fat Booty"?',
 					audioPath: './audio/Aretha Franklin - One Step Ahead.mp3',
 					revealed: false
 				},
 				{
 					points: 500,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er Pitbull med "Hotel Room Service"?',
 					audioPath: './audio/Nightcrawlers, MK - Push The Feeling On - The Dub Of Doom.mp3',
 					revealed: false
@@ -132,35 +131,35 @@
 			questions: [
 				{
 					points: 100,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er Rocky?',
 					audioPath: './audio/Bill Conti - Gonna Fly Now.mp3',
 					revealed: false
 				},
 				{
 					points: 200,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er Halo?',
 					audioPath: './audio/Martin O\'Donnell and Michael Salvatori, Anthony Lo Re - Never Forget (From \'Halo 3\').mp3',
 					revealed: false
 				},
 				{
 					points: 300,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er World of Warcraft?',
 					audioPath: './audio/Jason Hayes - Elwynn Forest.mp3',
 					revealed: false
 				},
 				{
 					points: 400,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er The Good, The Bad and The Ugly?',
 					audioPath: './audio/Ennio Morricone - The Trio.mp3',
 					revealed: false
 				},
 				{
 					points: 500,
-					question: 'Q',
+					question: '',
 					answer: 'Hvad er Modern Warfare 2?',
 					audioPath: './audio/Hans Zimmer - Opening Titles.mp3',
 					revealed: false
@@ -172,35 +171,35 @@
 			questions: [
 				{
 					points: 100,
-					question: 'Nelly Furtado - Promiscuous ft. ________',
+					question: '',
 					answer: 'Hvem er Timbaland?',
 					audioPath: './audio/Nelly Furtado, Timbaland - Promiscuous.mp3',
 					revealed: false
 				},
 				{
 					points: 200,
-					question: 'Beyoncé - Crazy in Love ft. ________',
+					question: '',
 					answer: 'Hvem er Jay-Z?',
 					audioPath: './audio/Beyoncé - Crazy In Love (feat. Jay-Z).mp3',
 					revealed: false
 				},
 				{
 					points: 300,
-					question: 'Post Malone - Sunflower ft. ________',
+					question: '',
 					answer: 'Hvem er Swae Lee?',
 					audioPath: './audio/Post Malone, Swae Lee - Sunflower.mp3',
 					revealed: false
 				},
 				{
 					points: 400,
-					question: 'Kato - Hey Shorty (Yeah Yeah Part II) ft. ________',
+					question: '',
 					answer: 'Hvem er U$O og Johnson?',
 					audioPath: './audio/Kato - Hey Shorty (Yeah Yeah Part II).mp3',
 					revealed: false
 				},
 				{
 					points: 500,
-					question: 'Kanye West - Mercy ft. ________',
+					question: '',
 					answer: 'Hvem er Big Sean, Pusha T og 2 Chainz?',
 					audioPath: './audio/Kanye West, Big Sean, Pusha T, 2 Chainz - Mercy.mp3',
 					revealed: false
