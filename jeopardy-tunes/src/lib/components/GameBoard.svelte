@@ -220,8 +220,8 @@
 
 	<!-- Players Container -->
 	<div class="players-container">
-		{#each $playerStore as { id, name, score }}
-			<Player {name} {score} onScoreChange={(change) => adjustPlayerScore(id, change)} />
+		{#each $playerStore as { id, name, image, score }}
+			<Player {name} {image} {score} onScoreChange={(change) => adjustPlayerScore(id, change)} />
 		{/each}
 	</div>
 

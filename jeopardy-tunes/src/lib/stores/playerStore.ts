@@ -3,12 +3,13 @@ import { writable } from 'svelte/store';
 interface Player {
   id: number;
   name: string;
+  image: string;
   score: number;
 }
 
 const playersStore = writable<Player[]>([
-  { id: 1, name: 'Player 1', score: 0 },
-  { id: 2, name: 'Player 2', score: 0 },
+  { id: 1, name: 'Player 1', image: '🤖', score: 0 },
+  { id: 2, name: 'Player 2', image: '😼', score: 0 },
 ]);
 
 export function adjustPlayerScore(playerId: number, change: number) {
