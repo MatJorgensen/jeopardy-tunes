@@ -27,21 +27,21 @@
 					points: 300,
 					question: 'Q',
 					answer: "KAYTRANADA - YOU'RE THE ONE - 99.9%",
-					audioPath: '',
+					audioPath: './audio/KAYTRANADA - YOURE THE ONE.mp3',
 					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Q',
 					answer: 'Tame Impala - The Less I Know The Better - Currents',
-					audioPath: '',
+					audioPath: './audio/Tame Impala - The Less I Know The Better.mp3',
 					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Q',
 					answer: "Scatman John - Scatman (ski-ba-bop-ba-dop-bop) - Scatman's World",
-					audioPath: '',
+					audioPath: './audio/Scatman John - Scatman (ski-ba-bop-ba-dop-bop).mp3',
 					revealed: false
 				}
 			]
@@ -93,36 +93,36 @@
 				{
 					points: 100,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er Kanye West med "Touch The Sky"?',
+					audioPath: './audio/Curtis Mayfield - Move on Up.mp3',
 					revealed: false
 				},
 				{
 					points: 200,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er MC Hammer med "U Can\'t Touch This"?',
+					audioPath: './audio/Rick James - Super Freak.mp3',
 					revealed: false
 				},
 				{
 					points: 300,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er Fugees med "Ready or Not"?',
+					audioPath: './audio/Enya - Boadicea.mp3',
 					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er Mos Def med "Ms. Fat Booty"?',
+					audioPath: './audio/Aretha Franklin - One Step Ahead.mp3',
 					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er Pitbull med "Hotel Room Service"?',
+					audioPath: './audio/Nightcrawlers, MK - Push The Feeling On - The Dub Of Doom.mp3',
 					revealed: false
 				}
 			]
@@ -133,36 +133,36 @@
 				{
 					points: 100,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er Rocky?',
+					audioPath: './audio/Bill Conti - Gonna Fly Now.mp3',
 					revealed: false
 				},
 				{
 					points: 200,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er Halo?',
+					audioPath: './audio/Martin O\'Donnell and Michael Salvatori, Anthony Lo Re - Never Forget (From \'Halo 3\').mp3',
 					revealed: false
 				},
 				{
 					points: 300,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er World of Warcraft?',
+					audioPath: './audio/Jason Hayes - Elwynn Forest.mp3',
 					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er The Good, The Bad and The Ugly?',
+					audioPath: './audio/Ennio Morricone - The Trio.mp3',
 					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Q',
-					answer: 'Bach',
-					audioPath: '',
+					answer: 'Hvad er Modern Warfare 2?',
+					audioPath: './audio/Hans Zimmer - Opening Titles.mp3',
 					revealed: false
 				}
 			]
@@ -173,36 +173,36 @@
 				{
 					points: 100,
 					question: 'Nelly Furtado - Promiscuous ft. ________',
-					answer: 'Timbaland',
-					audioPath: '',
+					answer: 'Hvem er Timbaland?',
+					audioPath: './audio/Nelly Furtado, Timbaland - Promiscuous.mp3',
 					revealed: false
 				},
 				{
 					points: 200,
 					question: 'Beyoncé - Crazy in Love ft. ________',
-					answer: 'Jay-Z',
-					audioPath: '',
+					answer: 'Hvem er Jay-Z?',
+					audioPath: './audio/Beyoncé - Crazy In Love (feat. Jay-Z).mp3',
 					revealed: false
 				},
 				{
 					points: 300,
 					question: 'Post Malone - Sunflower ft. ________',
-					answer: 'Swae Lee',
-					audioPath: '',
+					answer: 'Hvem er Swae Lee?',
+					audioPath: './audio/Post Malone, Swae Lee - Sunflower.mp3',
 					revealed: false
 				},
 				{
 					points: 400,
 					question: 'Kato - Hey Shorty (Yeah Yeah Part II) ft. ________',
-					answer: 'U$O & Johnson',
-					audioPath: '',
+					answer: 'Hvem er U$O og Johnson?',
+					audioPath: './audio/Kato - Hey Shorty (Yeah Yeah Part II).mp3',
 					revealed: false
 				},
 				{
 					points: 500,
 					question: 'Kanye West - Mercy ft. ________',
-					answer: 'Big Sean, Pusha T & 2 Chainz',
-					audioPath: '',
+					answer: 'Hvem er Big Sean, Pusha T og 2 Chainz?',
+					audioPath: './audio/Kanye West, Big Sean, Pusha T, 2 Chainz - Mercy.mp3',
 					revealed: false
 				}
 			]
