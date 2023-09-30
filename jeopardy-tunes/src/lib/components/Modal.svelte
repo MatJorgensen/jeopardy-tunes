@@ -5,6 +5,7 @@
 	let isOpen: boolean;
 	let question: string | null;
 	let answer: string | null;
+	let audioPath: string | null;
 	let points: number;
 	let showAnswer = false;
 	let modalContent: HTMLElement;
@@ -14,10 +15,11 @@
 	let progress = 0;
 	let audio: HTMLAudioElement | null;
 
-	modalStore.subscribe(({ isOpen: open, question: q, answer: a, points: p }) => {
+	modalStore.subscribe(({ isOpen: open, question: q, answer: a, audioPath: ap, points: p }) => {
 		isOpen = open;
 		question = q;
 		answer = a;
+		audioPath = ap;
 		points = p;
 		showAnswer = false;
 
@@ -26,6 +28,15 @@
 
 	$: if (isOpen && modalContent) {
 		modalContent.focus();
+	}
+
+	$: if (audioPath && audioPath !== '') {
+		if (audio) {
+			audio.pause();
+			audio.removeEventListener('timeupdate', updateProgress);
+		}
+		audio = new Audio(audioPath);
+		audio.addEventListener('timeupdate', updateProgress);
 	}
 
 	function closeModal(event: MouseEvent) {
@@ -45,6 +56,8 @@
 
 	// audio
 	function playPauseAudio() {
+		if (!audioPath || audioPath === '') return;
+		
 		if (playing) {
 			audio?.pause();
 		} else {
@@ -60,21 +73,17 @@
 	}
 
 	function resetAudio() {
-        if (audio) {
-            audio.pause();
-            audio.currentTime = 0;
-            playing = false;
-            progress = 0;
-        }
-    }
+		if (audio) {
+			audio.pause();
+			audio.currentTime = 0;
+			playing = false;
+			progress = 0;
+		}
+	}
 
 	onMount(() => {
 		// question reveal
 		window.addEventListener('keyup', handleKeyup);
-
-		// audio
-		audio = new Audio('./audio/example.mp3');
-		audio.addEventListener('timeupdate', updateProgress);
 
 		return () => {
 			window.removeEventListener('keyup', handleKeyup);

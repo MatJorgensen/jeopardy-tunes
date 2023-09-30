@@ -1,7 +1,7 @@
 <script lang="ts">
 	import QuestionTile from './QuestionTile.svelte';
 	export let title: string;
-	export let questions: { question: string; answer: string; points: number; revealed: boolean }[];
+	export let questions: { question: string; answer: string; points: number; audioPath: string; revealed: boolean }[];
 </script>
 
 <div class="category">
@@ -9,8 +9,8 @@
 		<p>{title}</p>
 	</div>
 	<div class="questions">
-		{#each questions as { question, answer, points, revealed }, index (index)}
-			<QuestionTile {question} {answer} {points} {revealed} />
+		{#each questions as { question, answer, points, audioPath, revealed }, index (index)}
+			<QuestionTile {question} {answer} {points} {audioPath} {revealed} />
 		{/each}
 	</div>
 </div>

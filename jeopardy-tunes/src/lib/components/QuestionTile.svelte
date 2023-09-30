@@ -4,17 +4,24 @@
 	export let question: string;
 	export let answer: string;
 	export let points: number;
+	export let audioPath: string;
 	export let revealed: boolean;
 
 	function handleReveal() {
-		modalStore.set({ isOpen: true, question, answer, points });
+		modalStore.set({
+			isOpen: true,
+			question: question,
+			answer: answer,
+			audioPath: audioPath,
+			points: points
+		});
 		revealed = true;
 	}
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
-<div on:click={handleReveal} class="question-tile" class:revealed>
-	<p>${points}</p>
+<div on:click={handleReveal} class="question-tile" class:revealed={revealed}>
+    <p>${points}</p>
 </div>
 
 <style>
@@ -38,7 +45,7 @@
 		background-color: #0219a3;
 		text-align: center;
 		cursor: pointer;
-		color: #ffffff; 
+		color: #ffffff;
 		height: 100px; /* adjust as needed */
 		width: 270px;
 		margin: 5px;
